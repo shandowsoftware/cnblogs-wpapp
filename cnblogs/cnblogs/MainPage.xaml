@@ -1,0 +1,148 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="cnblogs.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+ 
+        <!--Panorama 控件-->
+        <controls:Panorama Title="中国博客园">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="PanoramaBackground.png"/>
+            </controls:Panorama.Background>
+ 
+            <!--Panorama 项目一-->
+            <controls:PanoramaItem Header="主题区">
+                <ListBox>
+                    <!--具有文字环绕的双线列表-->
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <toolkit:HubTile x:Name="btnPost1"  Source="/images/home.png"  Title="首页" Message="每日新博" Margin="6,0,6,6" Tap="btnPost1_Tap"/>
+                            <toolkit:HubTile x:Name="btnPost2"  Source="/images/wait.png" Title="候选" Message="候选区博文" Margin="6,6,6,6" Tap="btnPost2_Tap"/>
+                            <toolkit:HubTile x:Name="btnPost5"  Source="/images/skydrive_alt.png" Title="登陆" Message="登陆" Margin="6,6,6,6" Tap="btnPost5_Tap"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <toolkit:HubTile x:Name="btnPost4"  Source="/images/cream.png" Title="精华" Message="精华博文区" Margin="6,0,6,6" Tap="btnPost4_Tap"/>
+                            <toolkit:HubTile x:Name="btnPost3"  Source="/images/news.png" Title="新闻" Message="IT界大杂烩" Margin="6,6,6,6" Tap="btnPost3_Tap"/>
+                            <toolkit:HubTile x:Name="btnPost6"  Source="/images/snagit.png" Title="关于" Message="关于博客园" Margin="6,6,6,6" Tap="btnPost6_Tap"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                </ListBox>
+
+            </controls:PanoramaItem>
+ 
+            <!--Panorama 项目二-->
+            <!--使用“Orientation="Horizontal"”可使面板水平放置-->
+            <controls:PanoramaItem Header="头条区" Loaded="PanoramaItem_Loaded">
+                <!--具有图像占位符和文字环绕的双线列表-->
+                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding}" Name="listBox1">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                                <!--用图像替换矩形
+                                <Rectangle Height="100" Width="100" Fill="" Margin="12,0,9,0"/>-->
+
+                                <Image Source="{Binding viweImages}" Height="100" Width="100" Margin="12,0,9,0" Name="image1"/>
+                                <StackPanel Width="311">
+                                    <TextBlock Text="{Binding recomTitle}" FontSize="35" TextWrapping="Wrap" Tag="{Binding titleLink}" Tap="TextBlock_Tap"></TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PanoramaItem>
+
+
+            <!--Panorama 项目三-->
+            <!--使用“Orientation="Horizontal"”可使面板水平放置-->
+            <controls:PanoramaItem Header="问答区" Loaded="PanoramaItem_Loaded_1">
+                <!--具有图像占位符和文字环绕的双线列表-->
+                <!--<ListBox Margin="0,0,-12,0" Name="listBox2" ItemsSource="{Binding}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                                用图像替换矩形
+                                <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                                <StackPanel Width="311">
+
+                                    <TextBlock Text="{Binding questionTitle}" FontSize="35" TextWrapping="Wrap"></TextBlock>
+                                    <TextBlock Text="{Binding questionIntroduce}" FontSize="20" TextWrapping="Wrap"></TextBlock>
+                                    <TextBlock Text="{Binding questionInfo}" FontSize="20"></TextBlock>
+
+
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>-->
+
+                <ListBox Height="595" Margin="0,0,-12,0" Name="listBox2" ItemsSource="{Binding}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Grid x:Name="rootaa" Margin="0,0,0,15">
+                                    <!--<Grid.Background>
+                                    <ImageBrush ImageSource="/images/snagit.png"></ImageBrush>
+                                </Grid.Background>-->
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="107*"></ColumnDefinition>
+                                        <ColumnDefinition Width="349*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="96*"></RowDefinition>
+                                        <RowDefinition Height="119*"></RowDefinition>
+                                        <RowDefinition Height="99*"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Image Grid.Column="0" Grid.Row="0" Height="70" Source="{Binding questionUserImage}" HorizontalAlignment="Left" Margin="6,6,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="73" />
+                                    <TextBlock Text="{Binding questionTitle}" Grid.Column="1" Grid.Row="0" FontSize="30" Margin="10,0,0,0" Width="Auto" TextWrapping="Wrap" Tag="{Binding questionLink}" Tap="TextBlock_Tap_1"></TextBlock>
+                                    <Image Grid.Row="1" Grid.Column="0" Source="{Binding questionGoldImage}" Height="45" HorizontalAlignment="Center" Margin="6,6,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="47"/>
+                                    <TextBlock Text="{Binding questionGoldCount}" Grid.Column="0" Grid.Row="1" FontSize="20" FontStyle="Italic" Margin="0,0,0,6" TextAlignment="Center"></TextBlock>
+                                    <TextBlock Text="{Binding questionIntroduce}" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="10,0,0,0" Width="Auto"></TextBlock>
+                                    <TextBlock Text="{Binding questionInfo}" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" Margin="0,-10,0,0" TextAlignment="Right" Width="Auto"></TextBlock>
+                                </Grid>
+
+                            </StackPanel>
+                        </DataTemplate>
+
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </controls:PanoramaItem>
+
+
+            <!--Panorama 项目四-->
+            <!--使用“Orientation="Horizontal"”可使面板水平放置-->
+            <controls:PanoramaItem Header="找你妹">
+                <!--具有图像占位符和文字环绕的双线列表-->
+                <ListBox Margin="0,0,-12,0" Name="listBox3">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
+                        <!--用图像替换矩形-->
+                        <Rectangle Height="100" Width="100" Fill="#FFE5001b" Margin="12,0,9,0"/>
+                        <StackPanel Width="311">
+                            <TextBox Name="searchValue" Width="Auto"></TextBox>
+                            <Button Name="btnSearch" Content="搜索" Width="Auto" Tap="btnSearch_Tap"></Button>
+
+                        </StackPanel>
+                    </StackPanel>
+                </ListBox>
+            </controls:PanoramaItem>
+
+        </controls:Panorama>
+    </Grid>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,105 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PhoneApp1.Views.wait"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True"
+    Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/waitListImage.png"></ImageBrush>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="博客园" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="候选" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <!--<ListBox Height="595" HorizontalAlignment="Left" Margin="0,6,0,0" Name="listBox1" VerticalAlignment="Top" Width="450" ItemsSource="{Binding}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Title}" FontSize="35" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Text="{Binding Introduce}" FontSize="20" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Text="{Binding Info}" FontSize="20"></TextBlock>
+
+                        </StackPanel>
+                    </DataTemplate>
+
+                </ListBox.ItemTemplate>
+
+            </ListBox>-->
+
+
+
+
+
+
+
+
+            <ListBox Height="595" Margin="0,0,-12,0" Name="listBox1" ItemsSource="{Binding}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Grid x:Name="rootaa" Margin="0,0,0,15">
+                                <!--<Grid.Background>
+                                    <ImageBrush ImageSource="/images/snagit.png"></ImageBrush>
+                                </Grid.Background>-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="107*"></ColumnDefinition>
+                                    <ColumnDefinition Width="349*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="96*"></RowDefinition>
+                                    <RowDefinition Height="119*"></RowDefinition>
+                                    <RowDefinition Height="99*"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="{Binding Title}" Grid.Column="1" Grid.Row="0" FontSize="30" Margin="10,0,0,0" Width="Auto" TextWrapping="Wrap" Tag="{Binding titleLink}" Tap="TextBlock_Tap"></TextBlock>
+                                <Image Grid.Row="0" Grid.Column="0" Source="{Binding recommendImage}" Height="45" HorizontalAlignment="Center" Margin="6,6,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="47"/>
+                                <TextBlock Text="{Binding recommendCount}" Grid.Row="0" Grid.Column="0" FontSize="20" FontStyle="Italic" Margin="0,0,0,6" TextAlignment="Center"></TextBlock>
+                                <TextBlock Text="{Binding Introduce}" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="10,0,0,0" Width="Auto"></TextBlock>
+                                <TextBlock Text="{Binding Info}" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" Margin="0,-10,0,0" TextAlignment="Right" Width="Auto"></TextBlock>
+                            </Grid>
+
+                        </StackPanel>
+                    </DataTemplate>
+
+                </ListBox.ItemTemplate>
+
+            </ListBox>
+
+        </Grid>
+    </Grid>
+ 
+    <!--演示 ApplicationBar 用法的示例代码-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="按钮 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="按钮 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="菜单项 1"/>
+                <shell:ApplicationBarMenuItem Text="菜单项 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
