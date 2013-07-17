@@ -1,20 +1,26 @@
-﻿<xapCache source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\cnblogs.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2013-07-15 8:34:38">
+﻿<xapCache source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\cnblogs.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2013-07-17 0:14:53">
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2013-06-29 22:34:32" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Background.png" archivePath="Background.png" lastWriteTime="2013-07-07 15:11:25" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2013-07-07 14:54:55" />
-  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\cnblogs.dll" archivePath="cnblogs.dll" lastWriteTime="2013-07-15 8:34:36" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\cnblogs.dll" archivePath="cnblogs.dll" lastWriteTime="2013-07-17 0:14:52" />
   <file source="C:\Users\hp\Documents\PhoneApp1\PhoneApp1\Bin\Debug\HtmlAgilityPack.dll" archivePath="HtmlAgilityPack.dll" lastWriteTime="2012-08-06 21:30:04" />
   <file source="c:\Program Files\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2011-08-29 22:49:08" />
   <file source="C:\Users\hp\Desktop\oschina-wp7-app-4ff0763\OSChina\Lib\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="2012-09-02 20:23:00" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\System.Xml.XPath.dll" archivePath="System.Xml.XPath.dll" lastWriteTime="2011-03-10 0:08:16" />
   <file source="C:\Users\hp\Desktop\oschina-wp7-app-4ff0763\OSChina\Lib\WP7_WebLib.dll" archivePath="WP7_WebLib.dll" lastWriteTime="2012-09-02 20:23:00" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\CrashPlan.png" archivePath="images\CrashPlan.png" lastWriteTime="2013-07-16 22:10:21" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\cream.png" archivePath="images\cream.png" lastWriteTime="2013-07-06 12:14:38" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\creamListImage.png" archivePath="images\creamListImage.png" lastWriteTime="2013-07-07 14:42:43" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\ff.png" archivePath="images\ff.png" lastWriteTime="2013-07-16 22:05:01" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\flashMemory.png" archivePath="images\flashMemory.png" lastWriteTime="2013-07-16 22:22:35" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\gold.png" archivePath="images\gold.png" lastWriteTime="2013-07-01 22:07:57" />
-  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\home.png" archivePath="images\home.png" lastWriteTime="2013-07-06 12:06:16" />
-  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\indexListImage.png" archivePath="images\indexListImage.png" lastWriteTime="2013-07-07 14:22:10" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\indexListImage.png" archivePath="images\indexListImage.png" lastWriteTime="2013-07-16 22:18:42" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\Magnifier.png" archivePath="images\Magnifier.png" lastWriteTime="2013-07-16 23:55:31" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\Messaging.png" archivePath="images\Messaging.png" lastWriteTime="2013-07-16 22:07:59" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\news.png" archivePath="images\news.png" lastWriteTime="2013-07-06 14:11:12" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\newsListImage.png" archivePath="images\newsListImage.png" lastWriteTime="2013-07-07 14:46:00" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\rew.png" archivePath="images\rew.png" lastWriteTime="2013-07-16 22:05:01" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\UserNo-Frame.png" archivePath="images\UserNo-Frame.png" lastWriteTime="2013-07-16 23:39:45" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\wait.png" archivePath="images\wait.png" lastWriteTime="2013-07-06 14:11:12" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\waitListImage.png" archivePath="images\waitListImage.png" lastWriteTime="2013-07-07 14:46:00" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2013-07-06 11:57:41" />
@@ -25,13 +31,19 @@
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\images\sophos_alt.png" archivePath="images\sophos_alt.png" lastWriteTime="2013-06-29 22:42:05" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2013-07-11 10:29:17" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2013-07-07 14:54:55" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\CrashPlan.png" archivePath="images\CrashPlan.png" lastWriteTime="2013-07-16 22:10:21" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\cream.png" archivePath="images\cream.png" lastWriteTime="2013-07-06 12:14:38" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\creamListImage.png" archivePath="images\creamListImage.png" lastWriteTime="2013-07-07 14:42:43" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\ff.png" archivePath="images\ff.png" lastWriteTime="2013-07-16 22:05:01" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\flashMemory.png" archivePath="images\flashMemory.png" lastWriteTime="2013-07-16 22:22:35" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\gold.png" archivePath="images\gold.png" lastWriteTime="2013-07-01 22:07:57" />
-  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\home.png" archivePath="images\home.png" lastWriteTime="2013-07-06 12:06:16" />
-  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\indexListImage.png" archivePath="images\indexListImage.png" lastWriteTime="2013-07-07 14:22:10" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\indexListImage.png" archivePath="images\indexListImage.png" lastWriteTime="2013-07-16 22:18:42" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\Magnifier.png" archivePath="images\Magnifier.png" lastWriteTime="2013-07-16 23:55:31" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\Messaging.png" archivePath="images\Messaging.png" lastWriteTime="2013-07-16 22:07:59" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\news.png" archivePath="images\news.png" lastWriteTime="2013-07-06 14:11:12" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\newsListImage.png" archivePath="images\newsListImage.png" lastWriteTime="2013-07-07 14:46:00" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\rew.png" archivePath="images\rew.png" lastWriteTime="2013-07-16 22:05:01" />
+  <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\UserNo-Frame.png" archivePath="images\UserNo-Frame.png" lastWriteTime="2013-07-16 23:39:45" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\wait.png" archivePath="images\wait.png" lastWriteTime="2013-07-06 14:11:12" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\waitListImage.png" archivePath="images\waitListImage.png" lastWriteTime="2013-07-07 14:46:00" />
   <file source="C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2013-07-06 11:57:41" />

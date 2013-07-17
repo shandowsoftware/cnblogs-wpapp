@@ -34,17 +34,19 @@ namespace cnblogs.ContentViews
                 searchValueHttpUri = NavigationContext.QueryString["searchParam"];
                 getSearchResult(searchValueHttpUri, pageValue);
             }
+            
 
-   
+
         }
 
-        private  void getSearchResult(string searchValueHttpUri,int pageParam) {
+        private void getSearchResult(string searchValueHttpUri, int pageParam)
+        {
 
             HtmlAgilityPack.HtmlWeb htmlDoc = new HtmlAgilityPack.HtmlWeb();
             htmlDoc.LoadCompleted += new EventHandler<HtmlDocumentLoadCompleted>(htmlDocCompleteSearch);
 
-            htmlDoc.LoadAsync("http://zzk.cnblogs.com/s?w=" + searchValueHttpUri + "&t=b&p="+pageParam+"");
-        
+            htmlDoc.LoadAsync("http://zzk.cnblogs.com/s?w=" + searchValueHttpUri + "&t=b&p=" + pageParam + "");
+
         }
 
 
@@ -57,9 +59,9 @@ namespace cnblogs.ContentViews
                 if (htmlDoc != null)
                 {
                     List<SearchEntity> searchList = new List<SearchEntity>();
-                    
+
                     HtmlNode node = htmlDoc.GetElementbyId("searchResult");
-                    
+
                     HtmlNodeCollection noC = node.SelectNodes("//*[@class=\"searchItem\"]");
 
                     foreach (HtmlNode h in noC)
@@ -69,35 +71,35 @@ namespace cnblogs.ContentViews
 
                         foreach (HtmlNode child in hn1.ChildNodes)
                         {
-  
+
                             if (child.Attributes["class"] != null && child.Attributes["class"].Value == "searchItemTitle")
                             {
                                 HtmlNode hsn = HtmlNode.CreateNode(child.OuterHtml);
-                                
+
                                 string searchTitleValue = hsn.SelectSingleNode("//*[@class=\"searchItemTitle\"]").InnerText.Trim();
                                 search.searchTitle = searchTitleValue;
-                                //MessageBox.Show("searchTitle--------------" + searchTitle.Trim());
+                                //MessageBox.Show("searchTitle--------------" + searchTitleValue);
                             }
-                            
+
                             else if (child.Attributes["class"] != null && child.Attributes["class"].Value == "searchCon")
                             {
                                 HtmlNode hsn = HtmlNode.CreateNode(child.OuterHtml);
 
-                                
+
                                 string searchConValue = hsn.SelectSingleNode("//*[@class=\"searchCon\"]").InnerText.Trim();
                                 search.searchCon = searchConValue;
 
-                                //MessageBox.Show("searchCon--------------" + searchCon.Trim());
+                                //MessageBox.Show("searchCon--------------" + searchConValue);
                             }
-                            
+
                             else if (child.Attributes["class"] != null && child.Attributes["class"].Value == "searchItemInfo")
                             {
-                                
-                                
+
+
                                 HtmlNode hsn = HtmlNode.CreateNode(child.OuterHtml);
                                 foreach (HtmlNode searchItemInfoChild in hsn.ChildNodes)
                                 {
-                                    if (searchItemInfoChild.Attributes["class"] != null && searchItemInfoChild.Attributes["class"].Value == "searchItemInfo-userName")
+                                    if (searchItemInfoChild.Attributes["class"] != null && searchItemInfoChild.Attributes["class"].Value == "searchItemInfo")
                                     {
                                         string userName = searchItemInfoChild.SelectSingleNode("//*[@class=\"searchItemInfo-userName\"]").InnerText.Trim();
                                         string publishDate = searchItemInfoChild.SelectSingleNode("//*[@class=\"searchItemInfo-publishDate\"]").InnerText.Trim();
@@ -113,18 +115,18 @@ namespace cnblogs.ContentViews
                                     {
                                         string searchURLValue = searchItemInfoChild.SelectSingleNode("//*[@class=\"searchURL\"]").InnerText.Trim();
                                         search.searchURL = searchURLValue;
-                                        //MessageBox.Show("searchInfo--------------" + searchURL);
+                                        //MessageBox.Show("searchInfo--------------" + searchURLValue);
                                     }
                                 }
 
-                                
-                                
+
+
                                 //string searchInfo = child.SelectSingleNode("//*[@class=\"searchItemInfo\"]").InnerText;
                                 //MessageBox.Show("searchInfo--------------" + searchInfo);
                             }
 
-                            
-                       }
+
+                        }
 
                         searchList.Add(search);
                     }
@@ -142,16 +144,18 @@ namespace cnblogs.ContentViews
         {
             //MessageBox.Show("button1");
             pageValue--;
-            if(pageValue<1){
+            if (pageValue < 1)
+            {
                 pageValue = 1;
             }
-            getSearchResult(searchValueHttpUri,pageValue);
+            getSearchResult(searchValueHttpUri, pageValue);
         }
 
         private void ApplicationBarIconButton_Click_1(object sender, EventArgs e)
         {
             pageValue++;
-            if(pageValue>=100){
+            if (pageValue >= 100)
+            {
                 pageValue = 100;
             }
             getSearchResult(searchValueHttpUri, pageValue);

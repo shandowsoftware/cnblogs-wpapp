@@ -48,9 +48,10 @@ namespace cnblogs.Views
             
             myRequest.CookieContainer = myCookie;
             myRequest.BeginGetRequestStream(new AsyncCallback(GetRequestStreamCallback), myRequest);*/
-
+            string username=this.username.Text;
+            string password = this.password.Password;
             
-            NavigationService.Navigate(new Uri("/Views/flashMemory.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Views/flashMemory.xaml?username="+username+"&password="+password+"", UriKind.Relative));
         }
 
 

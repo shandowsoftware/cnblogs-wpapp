@@ -14,7 +14,11 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot 是包含所有页面内容的根网格-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/flashMemory.png"></ImageBrush>
+        </Grid.Background>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -29,7 +33,9 @@
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
+                <TextBlock Name="usertext" Text="用户名" TextAlignment="Left"></TextBlock>
                 <TextBox Name="username"></TextBox>
+                <TextBlock Name="passtext" Text="密码" TextAlignment="Left"></TextBlock>
                 <PasswordBox Name="password"></PasswordBox>
                 <Button Content="登陆" Click="Button_Click"></Button>
                 

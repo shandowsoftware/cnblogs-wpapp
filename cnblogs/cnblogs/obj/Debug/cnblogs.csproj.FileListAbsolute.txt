@@ -32,7 +32,6 @@ C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\Cont
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\ContentViews\creamContent.g.i.cs
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\ContentViews\waitContent.g.i.cs
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\ContentViews\nowNewsContent.g.i.cs
-C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\home.png
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\cream.png
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\news.png
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\wait.png
@@ -44,3 +43,10 @@ C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\Cont
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\Views\login.g.i.cs
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\WP7_WebLib.dll
 C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\obj\Debug\Views\flashMemory.g.i.cs
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\ff.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\Messaging.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\rew.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\CrashPlan.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\flashMemory.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\UserNo-Frame.png
+C:\Users\hp\Documents\Visual Studio 2010\Projects\cnblogs\cnblogs\Bin\Debug\images\Magnifier.png

@@ -15,7 +15,10 @@
     Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot 是包含所有页面内容的根网格-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/flashMemory.png"></ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -29,13 +32,45 @@
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ScrollViewer VerticalAlignment="Top">
+            <!--<ScrollViewer VerticalAlignment="Top">
                 <ScrollViewer.Content>
-                    <TextBlock Name="textBlockResult" Height="500"></TextBlock>
+                    <TextBlock Name="textBlockResult" Height="356"></TextBlock>
                 </ScrollViewer.Content>
-            </ScrollViewer>
-            <Button Name="submitData" Content="闪一下" Margin="-6,504,6,20" Tap="submitData_Tap"></Button>
-            
+            </ScrollViewer>-->
+
+
+            <ListBox Height="400" Margin="0,-22,-12,230" Name="listBox1" ItemsSource="{Binding}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Grid x:Name="rootaa" Margin="0,0,0,15">
+                                <!--<Grid.Background>
+                                    <ImageBrush ImageSource="/images/snagit.png"></ImageBrush>
+                                </Grid.Background>-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="107*"></ColumnDefinition>
+                                    <ColumnDefinition Width="349*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="96*"></RowDefinition>
+                                    <RowDefinition Height="119*"></RowDefinition>
+                                    <RowDefinition Height="99*"></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <TextBlock Text="{Binding userAuthor}" Grid.Column="1" Grid.Row="0" FontSize="30" Margin="10,0,0,0" Width="350" TextWrapping="Wrap"></TextBlock>
+                                <Image Grid.Row="0" Grid.Column="0" Source="{Binding userImage}" Height="45" HorizontalAlignment="Center" Margin="6,6,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="47"/>
+                                <TextBlock Text="{Binding userContent}" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="10,0,0,0" Width="350"></TextBlock>
+                                <TextBlock Text="{Binding userReleaseDate}" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" TextAlignment="Right" Width="350"></TextBlock>
+                            </Grid>
+
+                        </StackPanel>
+                    </DataTemplate>
+
+                </ListBox.ItemTemplate>
+
+            </ListBox>
+            <TextBox Name="flashMemoryContent" TextWrapping="Wrap" Margin="-6,405,6,65"></TextBox>
+            <Button Name="submitData" Content="闪一下" Margin="-6,524,6,0" Tap="submitData_Tap"></Button>
         </Grid>
     </Grid>
  

@@ -15,7 +15,10 @@
     Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot 是包含所有页面内容的根网格-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/flashMemory.png"></ImageBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -33,29 +36,29 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
-                            <TextBlock Text="{Binding searchTitle}" FontSize="35" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Text="{Binding searchTitle}" FontSize="35" TextWrapping="Wrap"  Margin="0,20,0,0"></TextBlock>
                             <TextBlock Text="{Binding searchCon}" FontSize="20" TextWrapping="Wrap"></TextBlock>
                             <TextBlock Text="{Binding searchInfo}" FontSize="20" TextWrapping="Wrap"></TextBlock>
-                            <TextBlock Text="{Binding searchURL}" FontSize="15" TextWrapping="Wrap"></TextBlock>
+                            <TextBlock Text="{Binding searchURL}" FontSize="15" TextWrapping="Wrap" Margin="0,0,0,10"></TextBlock>
                         </StackPanel>
                     </DataTemplate>
 
                 </ListBox.ItemTemplate>
 
             </ListBox>
-            
+
         </Grid>
     </Grid>
- 
+
     <!--演示 ApplicationBar 用法的示例代码-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="按钮 1" Click="ApplicationBarIconButton_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="按钮 2" Click="ApplicationBarIconButton_Click_1"/>
-            <shell:ApplicationBar.MenuItems>
+            <shell:ApplicationBarIconButton IconUri="/Images/rew.png" Text="上一页" Click="ApplicationBarIconButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/ff.png" Text="下一页" Click="ApplicationBarIconButton_Click_1"/>
+            <!--<shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem Text="菜单项 1"/>
                 <shell:ApplicationBarMenuItem Text="菜单项 2"/>
-            </shell:ApplicationBar.MenuItems>
+            </shell:ApplicationBar.MenuItems>-->
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 

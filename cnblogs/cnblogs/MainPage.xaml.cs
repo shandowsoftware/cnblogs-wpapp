@@ -277,7 +277,7 @@ namespace cnblogs
                                     string userImage = imgAuthor.GetAttributeValue("src", "");
                                     if (userImage.IndexOf(".gif") > -1)
                                     {
-                                        question.questionUserImage = "/images/skydrive.png";
+                                        question.questionUserImage = "/images/UserNo-Frame.png";
                                     }
                                     else
                                     {
@@ -354,8 +354,20 @@ namespace cnblogs
         private void btnSearch_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             string searchValue = this.searchValue.Text;
-            NavigationService.Navigate(new Uri("/ContentViews/itemSearch.xaml?searchParam=" + searchValue + "", UriKind.Relative));
-            //NavigationService.Navigate(new Uri("/ContentViews/itemSearch.xaml", UriKind.Relative));
+            if (searchValue == null || searchValue.Equals(""))
+            {
+                MessageBox.Show("写点什么吧!");
+            }
+            else {
+                NavigationService.Navigate(new Uri("/ContentViews/itemSearch.xaml?searchParam=" + searchValue + "", UriKind.Relative));
+                //NavigationService.Navigate(new Uri("/ContentViews/itemSearch.xaml", UriKind.Relative));
+            
+            }
+
+            
+            
+            
+            
             
 
 
